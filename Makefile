@@ -4,6 +4,7 @@ include .env
 
 check: .env
 	@[[ -z "${OPENAI_API_KEY}" ]] && echo "🚨 Error: OPENAI_API_KEY not set" && exit 1 || echo "👍 OPENAI_API_KEY set"
+	@[[ -z "${GITHUB_TOKEN}" ]] && echo "🚨 Error: GITHUB_TOKEN not set" && exit 1 || echo "👍 GITHUB_TOKEN set"
 
 serve-dev: .make/poetry_install .env
 	poetry run eidolon-server -m local_dev resources
