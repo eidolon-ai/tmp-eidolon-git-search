@@ -2,4 +2,5 @@
 .idea/
 .make/
 .env
+.ipynb_checkpoints
 *.iml
