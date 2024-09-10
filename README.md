@@ -1,6 +1,22 @@
-# Eidolon Agent Machine Template
+# Eidolon Git Search Recipe
 
-This project serves as a template for individuals interested in building agents with Eidolon.
+In this recipe we have created a github copilot who can answer questions about the Eidolon monorepo. It dynamically pulls in information via similarity search to answer user queries.
+This is important if you have a body of information that is constantly changing, but you need real time information about (ie, a git repository).
+
+## Core Concepts
+* Multi-agent communication
+* Sub-component customization
+* Dynamic embedding management
+
+## Agents
+### Repo Expert
+The user facing copilot. Ask this agent questions about a repository, and it will go and find the answer with the 
+assistance of the repo search agent.
+
+### Repo Search
+Handles loading, embedding, and re-embedding documents ensuring they are up-to-date.
+
+Translates queries into a vector search query and returns the top results.
 
 ## Directory Structure
 
@@ -12,8 +28,8 @@ This project serves as a template for individuals interested in building agents 
 First you need to clone the project and navigate to the project directory:
 
 ```bash
-git clone https://github.com/eidolon-ai/agent-machine.git
-cd agent-machine
+git clone https://github.com/eidolon-ai/eidolon-git-search.git
+cd eidolon-git-search
 ```
 
 Then run the server using docker, use the following command:
@@ -54,8 +70,8 @@ To use kubernetes for local development, you will need to have the following ins
 Clone the project and navigate to the project directory:
 
 ```bash
-git clone https://github.com/eidolon-ai/agent-machine.git
-cd agent-machine
+git clone https://github.com/eidolon-ai/eidolon-git-search.git
+cd eidolon-git-search
 ```
 
 ### Installation

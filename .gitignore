@@ -2,6 +2,7 @@
 .idea/
 .make/
 .env
+.ipynb_checkpoints
 *.iml
 container_logs.txt
 __pycache__/
