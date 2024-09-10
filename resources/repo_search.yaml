@@ -1,7 +1,7 @@
 apiVersion: eidolon/v1
 kind: Agent
 metadata:
-  name: repo_search
+  name: repo-search
 
 spec:
   implementation: RetrieverAgent

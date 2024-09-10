@@ -5,7 +5,7 @@
     "image": "image.webp",
     "type": "dev",
     "params": {
-      "agent": "repo_expert"
+      "agent": "repo-expert"
     }
   }
 }

@@ -1,10 +1,10 @@
 apiVersion: eidolon/v1
 kind: Agent
 metadata:
-  name: repo_expert
+  name: repo-expert
 
 spec:
-  agent_refs: [repo_search]
+  agent_refs: [repo-search]
   system_prompt:
     You are a software documentation assistant responsible for maintaining a project and trying to prove yourself.
     Your job is to write documentation for the project including how to use it, what each component does, and the details of each part of the code.
